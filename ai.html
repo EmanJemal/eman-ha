@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Bot</title>
+  <!-- Linking Google Fonts For Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="chatbot.css">
+  <link
+  rel="shortcut icon"
+  href="assets/images/favicon.png"
+  type="image/png"
+/>
+
+<!--====== CSS Files LinkUp ======-->
+<link rel="stylesheet" href="assets/css/animate.css" />
+<link rel="stylesheet" href="assets/css/glightbox.min.css" />
+<link rel="stylesheet" href="assets/css/lineIcons.css" />
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+<!--====== PRELOADER PART START ======-->
+<div class="preloader">
+  <div class="loader">
+    <div class="spinner">
+      <div class="spinner-container">
+        <div class="spinner-rotator">
+          <div class="spinner-left">
+            <div class="spinner-circle"></div>
+          </div>
+          <div class="spinner-right">
+            <div class="spinner-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--====== PRELOADER PART ENDS ======-->
+
+<!--====== HEADER PART START ======-->
+<header class="header-area">
+  <div class="navbar-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse sub-menu-bar"
+              id="navbarSupportedContent"
+            >
+              <ul id="nav" class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class=" " href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" href="/form.html">Apply</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll active" href="/ai.html">Chat Bot</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" target="_blank" href="https://t.me/FlipHacks">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <!-- navbar collapse -->
+
+            <div class="navbar-btn d-none d-sm-inline-block">
+              <a
+                class="main-btn"
+                data-scroll-nav="0"
+                href="https://github.com/kerrybli/SaaS-Landing-Page-template"
+                target="_blank"
+              >
+                Get It Now
+              </a>
+            </div>
+          </nav>
+          <!-- navbar -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </div>
+  <!-- navbar area -->
+
+
+  <!-- header hero -->
+</header>
+<!--====== HEADER PART ENDS ======-->
+
+
+
+  <header class="header">
+    <!-- Header Greetings -->
+    <!-- Suggestion list -->
+    <ul class="suggestion-list">
+      <li class="suggestion">
+        <h4 class="text">Help me plan a game night with my 5 best friends for under $100.</h4>
+        <span class="icon material-symbols-rounded">draw</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">What are the best tips to improve my public speaking skills?</h4>
+        <span class="icon material-symbols-rounded">lightbulb</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Can you help me find the latest news on web development?</h4>
+        <span class="icon material-symbols-rounded">explore</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Write JavaScript code to sum all elements in an array.</h4>
+        <span class="icon material-symbols-rounded">code</span>
+      </li>
+    </ul>
+  </header>
+  <!-- Chat List / Container -->
+  <div class="chat-list"></div>
+  <!-- Typing Area -->
+  <div class="typing-area">
+    <form action="#" class="typing-form">
+      <div class="input-wrapper">
+        <input type="text" placeholder="Enter a prompt here" class="typing-input" required />
+        <button id="send-message-button" class="icon material-symbols-rounded">send</button>
+      </div>
+      <div class="action-buttons">
+        <span id="theme-toggle-button" class="icon material-symbols-rounded">light_mode</span>
+        <span id="delete-chat-button" class="icon material-symbols-rounded">chat</span>
+      </div>
+    </form>
+    <p class="disclaimer-text">
+      Gemini may display inaccurate info, including about people, so double-check its responses.
+    </p>
+  </div>
+
+    <!--====== BACK TOP TOP PART START ======-->
+    <a href="#" class="back-to-top"> <i class="fa-solid fa-arrow-up"></i> </a>
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    <!--====== Javascript Files ======-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a9dbad3c27.js" crossorigin="anonymous"></script>
+  
+  <script src="../chatbot.js"></script>
+</body>
+</html>
